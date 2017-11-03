@@ -31,7 +31,7 @@ function search() {
               
               
               if (show[i].fields.primary_image_id != null) {
-                  htmlToInject += "<div class='align1'><img id='imgrsl' src = \"http://media.vam.ac.uk/media/thira/collection_images/"+show[i].fields.primary_image_id.substring(0,6)+"/" +show[i].fields.primary_image_id +"_jpg_s.jpg\" img></div></div>";
+                  htmlToInject += "<div class='align1'><img id='imgrsl' src = \"https://media.vam.ac.uk/media/thira/collection_images/"+show[i].fields.primary_image_id.substring(0,6)+"/" +show[i].fields.primary_image_id +"_jpg_s.jpg\" img></div></div>";
                 
                 }else{htmlToInject += "</div>"}
           }
