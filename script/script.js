@@ -25,13 +25,17 @@ function search() {
           console.log(show);
           var htmlToInject= "";
                //console.log(show); 
-          for (var i = 0 ; i < show.length;i++){
-              htmlToInject = htmlToInject + "<div class= 'item'>"+"<div class='align'><h1>"+show[i].fields.title+"</h1><h2>"+show[i].fields.artist+"</h2><h2>"+show[i].fields.date_text+"</h2></div>";
+               
+               var i;
+          
+          for (i = 0 ; i < show.length ;i++){
+              console.log(i);
+              htmlToInject = htmlToInject + "<div class= 'item'>"+"<div class='align'><h1>"+show[i].fields.title+"</h1></div>";
               
               
               
               if (show[i].fields.primary_image_id != null) {
-                  htmlToInject += "<div class='align1'><img id='imgrsl' src = \"https://media.vam.ac.uk/media/thira/collection_images/"+show[i].fields.primary_image_id.substring(0,6)+"/" +show[i].fields.primary_image_id +"_jpg_s.jpg\" img></div></div>";
+                  htmlToInject += "<div class='align1'><img id='imgrsl' src = \"https://media.vam.ac.uk/media/thira/collection_images/"+show[i].fields.primary_image_id.substring(0,6)+"/" +show[i].fields.primary_image_id +"_jpg_s.jpg\" img>          <h2>"+show[i].fields.artist+"</h2><h2>"+show[i].fields.date_text+"</h2></div></div>";
                 
                 }else{htmlToInject += "</div>"}
           }
@@ -40,5 +44,8 @@ function search() {
           document.getElementById("result").innerHTML = htmlToInject;
     
           });}  
+
+      
+
 
   

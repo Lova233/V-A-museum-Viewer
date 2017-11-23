@@ -1,6 +1,7 @@
 
+/*Normalizer*/
+/*General*/
 html, body {
-
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -9,15 +10,72 @@ html, body {
     padding: 0px;
 }
 
+
+
+
+header{
+    height: 60px;
+    background-color: #696969;
+	width: 100%;
+}
+
+footer{
+    background: #696969;
+    height: 50px;
+
+}
+section {
+    align-self: center;   
+    width: 80%;
+    margin-top: 30px;
+}
+
+#logo{
+    height: 40px;
+    margin-top: 7px;
+
+}
+
+
+.nav{
+	display: inline-block;
+    float: right;
+    font-size: 1.5vh;
+    color: white;
+    height: 60px;
+    width: 90px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;   
+    font-family: 'Open Sans', sans-serif; 
+}
+
+:hover.nav{
+    background-color: white;
+    color: black;
+}
+.containerheader{
+	width: 80%;
+	height: 100%;
+	max-width: 900px;
+    margin: 0 auto;
+    background-color: #696969;
+}
+
+
+
+/* thypography */
+
+
 a:hover, a:visited, a:link, a:active {
     text-decoration: none;
 }
 h1 {
-    font-size: 1em;
+    font-size: 0.8em;
     text-align: center;
     color: black;
     margin:0px;
-    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h2{ 
@@ -25,6 +83,7 @@ h2{
     text-align: center;
     color: black;
     margin:0px;
+    font-family: 'Open Sans', sans-serif;
 
 
 }
@@ -33,6 +92,7 @@ h3{ font-size: 1.7em;
     text-align: center;
     color: black;
     margin:0px;
+    font-family: 'Open Sans', sans-serif;
 
 }
 
@@ -40,18 +100,34 @@ P{ font-size: 1.3em;
     text-align: center;
     color: white;
     margin:0px;
+    font-family: 'Open Sans', sans-serif;
 
 }
 
+/*Container and other div*/
 
-main {
+
+main  {
     height: 100%;
-    widows: 100%;
     display: flex;
     flex: 1;
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    background-image: url("assets/b1.png"); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat
+    overflow: hidden;
+}
+
+.description{
+    display: inline;
+    width: 600px;
+    margin-left: 20px;
+    margin-bottom: 200px;
 }
 
 
@@ -101,18 +177,17 @@ input:-ms-input-placeholder {
     color: white !important;
 }
 
-section {
-    align-self: center;   
-    width: 80%;
-    margin-top: 30px;
-}
+
+
+/*Result section*/
 
 #result{
    display:flex;
    flex-direction: row;
    flex-wrap: wrap;
    width: 900px;
-   margin: 0 auto;
+   margin-left: auto;
+   margin-right: auto;
 
    
 }
@@ -121,14 +196,20 @@ section {
     margin:20px;
     border-style: solid;
     border-color: black;
-
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.4);
+    border-style: solid;
+    border-radius: 10px;
+    width: 200px;
+    height: 170px;
 }
 
 #imgrsl{
-    float: left;
-}
+    margin-left: auto;
+	margin-right: auto;
+    display: block;
+    max-width: 80px;
 
-.rsl{
-    
 }
 
