@@ -30,12 +30,12 @@ function search() {
           
           for (i = 0 ; i < show.length ;i++){
               console.log(i);
-              htmlToInject = htmlToInject + "<div class= 'item'>"+"<div class='align'><h1>"+show[i].fields.title+"</h1></div>";
+              htmlToInject = htmlToInject + "<div class= 'item'>";
               
               
               
               if (show[i].fields.primary_image_id != null) {
-                  htmlToInject += "<div class='align1'><img id='imgrsl' src = \"https://media.vam.ac.uk/media/thira/collection_images/"+show[i].fields.primary_image_id.substring(0,6)+"/" +show[i].fields.primary_image_id +"_jpg_s.jpg\" img>          <h2>"+show[i].fields.artist+"</h2><h2>"+show[i].fields.date_text+"</h2></div></div>";
+                  htmlToInject += "<div class='align1'>"+"<a href = \"https://media.vam.ac.uk/media/thira/collection_images/"+show[i].fields.primary_image_id.substring(0,6)+"/" +show[i].fields.primary_image_id +".jpg\">"+"<img id='imgrsl' src = \"https://media.vam.ac.uk/media/thira/collection_images/"+show[i].fields.primary_image_id.substring(0,6)+"/" +show[i].fields.primary_image_id +".jpg\" img>"+"</a></div><h1>"+show[i].fields.title+"</h1><h2>"+show[i].fields.artist+"</h2><h2>"+show[i].fields.date_text+"</h2></div></div>";
                 
                 }else{htmlToInject += "</div>"}
           }
