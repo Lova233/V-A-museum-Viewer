@@ -182,7 +182,7 @@ h6 {
 /*Container and other div*/
 
 main {
-    height: 100vh;
+    height: 120vh;
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -201,7 +201,7 @@ main {
     margin-left: 20px;
     margin-bottom: 200px;
 }
-form {
+.form {
     display: flex;
     justify-content: center;
     margin: 8px auto 15px auto;
@@ -251,6 +251,7 @@ input:-ms-input-placeholder {
     max-height: 100vh;
     margin-left: auto;
     margin-right: auto;
+    
 }
 /*small phone*/
 
